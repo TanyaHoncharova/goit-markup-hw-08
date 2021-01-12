@@ -2,31 +2,72 @@
 .advantages {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    justify-content: center;
+
+     @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 0px;
+
+        }
+
 }
 
 
 .advantages-list {
-    display: flex;
-    justify-content: space-around;
 
     & li:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
-}
 
 
+     @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 
-.advantages-item {
-    display: block;
+     @media screen and (min-width: 1200px) {
+         justify-content: space-around;
+     } 
+    
+    //     & li:not(:last-child) {
+        //         // margin-right: 30px;
+        //     }
+    }
+    
+    
+    
+    .advantages-item {
+        display: block;
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+        width: 354px;
+        margin: 15px;
+        .container & {
+            padding-right: -15px;
+            padding-left: -15px;
+        }
+        }
+
+        @media screen and (min-width: 1200px){
+            width: 270px;
+
+        }
 
     & h3 {
         @extend %h3;
+        text-align: center;
          text-transform: uppercase;
          color: $title-text-color;
          margin: 0;
          margin-bottom: 10px;
+
+         @media screen and (min-width: 768px) {
+             text-align: left;}
      }
 
      & p {
@@ -39,6 +80,7 @@
 .advantages-item::before {
     display: block;
     height: 120px;
+    width: 100%;
     content: '';
     background: $section-color;
     background-repeat: no-repeat;
@@ -68,6 +110,3 @@
 
     background-image: url(../images/icons/astronaut.svg);
 }
-
-
-

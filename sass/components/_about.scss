@@ -1,7 +1,17 @@
- .section-h {
+.about-us {
+    display: none;
+        @media screen and (min-width: 1200px) {
+            display: block;
+        
+        }
+}
+
+
+.section-h {
      @extend %h2;
     text-align: center;
     color: $title-text-color;
+    margin-bottom: 50px;
 }
 
 .about-list {

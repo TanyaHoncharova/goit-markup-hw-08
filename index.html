@@ -22,41 +22,51 @@
                 <a class="logo-link list" href="#">
                     <span>Web</span><span class="header">Studio</span>
                 </a>
-                <ul class="nav-list list">
-                    <li class="item curent"><a class="nav-item list curent" href="#">Студия</a></li>
-                    <li class="item"><a class="nav-item list" href="./portfolio.html">Портфолио</a></li>
-                    <li class="item"><a class="nav-item list" href="">Контакты</a></li>
-                </ul>
+                <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg widht="24" height="16" aria-label="Переключатель мобильного меню">
+                        <use class="icon-close" href="./images/icons/symbol-defs.svg#icon-close_24px"></use>
+                        <use class="icon-menu" href="./images/icons/symbol-defs.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul class="nav-list list">
+                        <li class="item curent"><a class="nav-item list curent" href="#">Студия</a></li>
+                        <li class="item"><a class="nav-item list" href="./portfolio.html">Портфолио</a></li>
+                        <li class="item"><a class="nav-item list" href="">Контакты</a></li>
+                    </ul>
+                    <address>
+                        <ul class="address list">
+                            <li class="item">
+                                <a class="address-item list " href="mailto:info@devstudio.com">
+                                    <svg class="icon-address mail">
+                                        <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="address-item list" href="tel:+380961111111">
+                                    <svg class="icon-address tell">
+                                        <use href="./images/icons/symbol-defs.svg#icon-smartphone">
+                                        </use>
+                                    </svg>
+                                    +38 096 111 11 11 </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
             </nav>
-            <address>
-                <ul class="address list">
-                    <li class="item">
-                        <a class="address-item list " href="mailto:info@devstudio.com">
-                            <svg class="icon-address mail">
-                                <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a class="address-item list" href="tel:+380961111111">
-                            <svg class="icon-address tell">
-                                <use href="./images/icons/symbol-defs.svg#icon-smartphone">
-                                </use>
-                            </svg>
-                            +38 096 111 11 11 </a>
-                    </li>
-                </ul>
-            </address>
         </div>
     </header>
     <main>
         <!--герой-->
-        <!-- <section class="hero">
-            <h1 class="hero-title">Эффективные решения <br>
+        <section class="hero">
+            <h1 class="hero-title">Эффективные решения
                 для вашего бизнеса</h1>
             <button class="hero-btn btn" data-modal-open>Заказать услугу</button>
-            <div class="backdrop is-hidden" data-modal>
+            <!-- modal -->
+            <!-- <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button class="close" data-modal-close>
                         <svg>
@@ -107,10 +117,10 @@
                     </div>
                     <button class="form-btn btn" type="submit">Отправить</button>
                 </div>
-            </div>
-        </section> -->
+            </div> -->
+        </section>
         <!--Особенности-->
-        <!-- <section class="advantages">
+        <section class="advantages">
             <div class="container">
                 <h2 class="visually-hidden"> Особенности</h2>
                 <ul class="advantages-list list ">
@@ -134,9 +144,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!--Чем мы занимаемся-->
-        <!-- <section>
+        <section class="about-us">
             <h2 class="section-h">Чем мы занимаемся</h2>
             <div class="container">
                 <ul class="about-list list  ">
@@ -160,9 +170,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- наша команда -->
-        <!-- <section class="team">
+        <section class="team">
             <h2 class="section-h">Наша команда</h2>
             <div class="container">
                 <ul class="team-list list">
@@ -341,6 +351,7 @@
                 </ul>
             </div>
         </section>
+        <!-- Постоянные клиенты -->
         <section class="regular-clients">
             <h2>Постоянные клиенты</h2>
             <ul class="clients list">
@@ -387,9 +398,9 @@
                     </a>
                 </li>
             </ul>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer>
+    <footer>
         <div class="content">
             <div class="logo-addres">
                 <a class="logo-link footer-logo list" href="#">
@@ -460,10 +471,12 @@
                     </button>
                 </form>
             </div>
-    </footer> -->
+        </div>
+    </footer>
 
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
 </body>
 

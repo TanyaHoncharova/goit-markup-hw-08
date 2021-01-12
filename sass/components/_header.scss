@@ -5,6 +5,7 @@
 
 width: 1200px;
 margin: 0 auto;
+position: relative;
 
 
 }
@@ -14,6 +15,45 @@ margin: 0 auto;
 @extend %centered;
     justify-content: space-around;
 }
+
+.menu-btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border:0;
+    background-color: transparent;
+
+    
+    & .icon-close {
+       display: none;
+   }
+
+   & .icon-menu {
+       display: block;
+   }
+
+   &.is-open .icon-close {
+       display: block;
+   }
+   
+   &.is-open .icon-menu {
+       display: none;
+   }
+
+}
+
+.menu-container {
+    display: none;
+    position: absolute;
+    top:100%;
+    left:0;
+
+    &.is-open {
+        display: block;
+    }
+}
+
+
 
 .nav-list {
     display: flex;

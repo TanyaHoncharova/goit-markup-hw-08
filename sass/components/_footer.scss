@@ -4,19 +4,42 @@ footer {
 }
 
 .content {
-    display: flex;
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-    justify-content: space-around;
-    align-items: baseline;
+padding: 60px 15px;
+  width: 100%;
+
+    @media screen and (min-width: 480px) {
+      
+    }
+
+    @media screen and (min-width: 768px) {
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        width: 1200px;
+        padding: 0 15px;
+        margin: 0 auto;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
 
 }
 
 .logo-addres {
     display: block;
-    padding-top: 50px;
+    margin: 0px auto 60px;
+    text-align: center;
 
+     @media screen and (min-width: 768px) {
+         margin: 0px 124px;
+
+    }
+     @media screen and (min-width: 1200px) {
+         padding-top: 50px;
+
+    }
 }
 
 
@@ -25,7 +48,7 @@ footer {
     @extend %ap;
     color: $white-color;
     font-style: normal;
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
 
     & a {
     @extend %ap;
