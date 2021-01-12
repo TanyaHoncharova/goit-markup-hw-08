@@ -1,0 +1,126 @@
+
+.header-box {
+@extend %centered;
+    justify-content: space-between;
+
+width: 1200px;
+margin: 0 auto;
+
+
+}
+
+
+.menu {
+@extend %centered;
+    justify-content: space-around;
+}
+
+.nav-list {
+    display: flex;
+    margin-left: 93px;
+
+    & .item.curent ::after {
+        content: "";
+        width: inherit;
+        height: 4px;
+        background: $accent-color;
+        border-radius: 2px;
+        display: flex;
+        margin-top: 27px;
+    }
+
+}
+
+
+
+.nav-list .item+.item {
+    margin-left: 50px;
+}
+
+.nav-item {
+    display: block;
+    padding-top: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    }
+}
+
+
+.address {
+    display: flex;
+    margin-left: auto;
+
+    & li {
+@extend %centered;
+    
+    }
+    & a {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.142px;
+        letter-spacing: 0.02em;
+        color: $primari-text-color;
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
+    }
+}
+
+
+
+
+.address .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.address-item:hover,
+.address-item:focus,
+.address-item:hover svg,
+.address-item:focus svg {
+    color: $accent-color;
+    fill: $accent-color;
+}
+
+
+
+
+.icon-address {
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-right: 10px;
+    fill: $primari-text-color;
+
+    transition-property: color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+
+}
+
+.mail {
+    width: 16px;
+    height: 12px;
+
+}
+
+.tell {
+    width: 10px;
+    height: 16px;
+}

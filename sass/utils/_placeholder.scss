@@ -1,0 +1,75 @@
+%logo {
+     display: block;
+    font-family: 'Raleway',
+    sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+%centered {
+   display: flex;
+   align-items: center;
+}
+
+%btn {
+     font: roboto;
+     background-color: $accent-color;
+    color:$white-color;
+     border: 1px solid $accent-color;
+    border-radius: 4px;
+    padding: 10px 32px;
+    height: 50px;
+     box-shadow: 0px 4px 4px $shadow-color;
+    font-weight: bold;
+    font-size: 16px;
+     line-height: 1.875;
+    letter-spacing: 0.06em;
+}
+
+%h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+
+}
+
+%h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+
+}
+
+%card-des {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+
+}
+
+%ap{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+
+}
+
+%filter-txt {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        letter-spacing: 0.03em;
+}

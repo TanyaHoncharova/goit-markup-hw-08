@@ -1,0 +1,73 @@
+/* Оссобености */
+.advantages {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.advantages-list {
+    display: flex;
+    justify-content: space-around;
+
+    & li:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+
+.advantages-item {
+    display: block;
+
+    & h3 {
+        @extend %h3;
+         text-transform: uppercase;
+         color: $title-text-color;
+         margin: 0;
+         margin-bottom: 10px;
+     }
+
+     & p {
+        @extend %ap;
+         margin: 0;
+     }
+
+}
+
+.advantages-item::before {
+    display: block;
+    height: 120px;
+    content: '';
+    background: $section-color;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-size: 70px;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/icons/antenna.svg);
+
+}
+
+.icon-clock::before {
+
+    background-image: url(../images/icons/clock.svg);
+}
+
+.icon-diagram::before {
+
+    background-image: url(../images/icons/diagram.svg);
+}
+
+.icon-astronaut::before {
+
+    background-image: url(../images/icons/astronaut.svg);
+}
+
+
+

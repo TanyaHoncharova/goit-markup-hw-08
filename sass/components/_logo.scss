@@ -1,0 +1,23 @@
+.logo-link {
+    @extend %logo;   
+    & span {
+        color: $accent-color;
+    }
+
+
+}
+
+.logo-link .header {
+    color:$title-text-color;
+    margin: 0px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+
+    & .footer {
+        color: $white-color;
+
+    }
+}
+
