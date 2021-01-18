@@ -1,7 +1,15 @@
 .header-box-p {
 @extend %centered;
     justify-content: space-between;
-    width: 1200px;
+    width: 100%;
     border-bottom: 1px solid $section-color;
-    margin: 0 auto
+    margin: 0 auto;
+
+     @media screen and (min-width: 1200px) {
+         display: flex;
+         margin: 0px auto;
+         width: 1200px;
+         padding: 0px 15px;
+
+     }
 }

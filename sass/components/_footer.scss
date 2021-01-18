@@ -23,11 +23,13 @@ footer {
     
     @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
-        width: 1200px;
+        align-items: baseline;
         justify-content: space-around;
+
+        width: 1200px;
         padding: 0 15px;
         margin: 0 auto;
-        padding: 60px auto;
+       
         
     }
 
@@ -45,10 +47,10 @@ footer {
     }
      @media screen and (min-width: 1200px) {
         display: block;
-        text-align: left;
+        // text-align: left;
         width: 231px;
         padding-top: 50px;
-        margin: 0px 0px 60px;
+        margin-right: 70px;
 
     }
 }
@@ -91,7 +93,7 @@ footer {
 
         @media screen and (min-width: 1200px) {
            margin-bottom: 0px;
-           width: 206px;
+        margin-right: 93px;
 
         }
 }
@@ -127,9 +129,7 @@ footer {
     margin-right: 10px;
 
     transition-property: background;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
+@include transition(transform);
     
     &:hover, &:focus  {
         background: $accent-color;
@@ -147,17 +147,16 @@ footer {
 
 
 .subscription-form {
-    display: block;
-
+    
     @media screen and (max-width: 768px) {
         width: 100%;
-        text-align: center;
-     }
+    }
     
     @media screen and (min-width: 1200px) {
-        //  width: 507px;
+        display: flex;
+        
     }
-
+    
 }
 
 .subscription {
@@ -166,7 +165,7 @@ footer {
     @media screen and (min-width: 1200px){
         display: flex;
         // position: relative;
-
+        
     }
 }
 
@@ -175,6 +174,9 @@ footer {
     text-transform: uppercase;
     margin-bottom: 20px;
     color: $white-color;
+    @media screen and (min-width:768px) and (max-width:1200px) {
+        text-align: center;    
+    }
 }
 
 
@@ -192,7 +194,6 @@ footer {
     
     width: 93%;
     height: 50px;
-    // margin: 0px auto;
     margin-bottom: 20px;
     padding-left: 16px;
 
@@ -200,6 +201,7 @@ footer {
         display: flex;
         width: 358px;
         margin-right: 12px;
+        padding-left: 16px;
       }
 
 

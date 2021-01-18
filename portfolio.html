@@ -19,37 +19,48 @@
     <header>
         <div class="header-box-p">
             <nav class="menu">
-                <a class="logo-link list" href="#">
-                    <span>Web</span><span class="header">Studio</span>
-                </a>
-                <ul class="nav-list list">
-                    <li class="item"><a class="nav-item list" href="./index.html">Студия</a></li>
-                    <li class="item curent"><a class="nav-item list curent" href="./index.html">Портфолио</a></li>
-                    <li class="item"><a class="nav-item list" href="">Контакты</a></li>
-                </ul>
+                <div class="logo">
+                    <a class="logo-link list" href="#">
+                        <span>Web</span><span class="header">Studio</span>
+                    </a>
+                </div>
+                <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg widht="24" height="16" aria-label="Переключатель мобильного меню">
+                        <use class="icon-close" href="./images/icons/symbol-defs.svg#icon-close_24px"></use>
+                        <use class="icon-menu" href="./images/icons/symbol-defs.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul class="nav-list list">
+                        <li class="navigation-item"><a class="nav-item list" href="./index.html">Студия</a></li>
+                        <li class="navigation-item curent"><a class="nav-item list curent"
+                                href="./index.html">Портфолио</a></li>
+                        <li class="navigation-item"><a class="nav-item list" href="">Контакты</a></li>
+                    </ul>
+                    <address class="address-block">
+                        <ul class="address list">
+                            <li class="item">
+                                <a class="address-item list " href="mailto:info@devstudio.com">
+                                    <svg class="icon-address mail">
+                                        <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="address-item list" href="tel:+380961111111">
+                                    <svg class="icon-address tell">
+                                        <use href="./images/icons/symbol-defs.svg#icon-smartphone">
+                                        </use>
+                                    </svg>
+                                    +38 096 111 11 11 </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
             </nav>
-            <address>
-                <ul class="address list">
-                    <li class="item">
-                        <a class="address-item list " href="mailto:info@devstudio.com">
-                            <svg class="icon-address mail">
-                                <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a class="address-item list" href="tel:+380961111111">
-                            <svg class="icon-address tell">
-                                <use href="./images/icons/symbol-defs.svg#icon-smartphone">
-                                </use>
-                            </svg>
-                            +38 096 111 11 11 </a>
-                    </li>
-                </ul>
-            </address>
         </div>
-
     </header>
     <main>
         <section class="portfolio">
@@ -335,6 +346,8 @@
                     </button>
                 </form>
     </footer>
+
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
