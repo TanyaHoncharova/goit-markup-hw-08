@@ -468,6 +468,12 @@ body {
   }
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .header-box {
   width: 100%;
   padding: 0px 15px;
@@ -836,9 +842,8 @@ body {
   padding-bottom: 118px;
   background-color: #2F303A;
   color: #ffffff;
-  background-image: url(../images/mobile/heroimg.jpg);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/heroimg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/heroimg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -846,33 +851,38 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/mobile/heroimg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/heroimg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/heroimg@2x.jpg);
   }
 }
 
 @media screen and (min-width: 480px) {
   .hero {
     width: 480px;
-    background-image: url(../images/tablet/heroimg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/heroimg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/heroimg.jpg);
   }
 }
 
 @media screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/tablet/heroimg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/heroimg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/heroimg@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     width: 768px;
-    background-image: url(../images/desctop/heroimg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desctop/heroimg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctop/heroimg.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/desctop/heroimg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desctop/heroimg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctop/heroimg@2x.jpg);
   }
 }
 
@@ -1340,8 +1350,8 @@ body {
   background: rgba(47, 48, 58, 0.8);
   bottom: 0px;
   right: 0;
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
   width: 100%;
   height: 70px;
   -webkit-box-pack: center;
@@ -1960,11 +1970,22 @@ footer {
 }
 
 .filter-item {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 15px;
   margin-right: 8px;
   border-radius: 4px;
   color: #212121;
   background-color: #F5F4FA;
+}
+
+@media screen and (max-width: width 768px) {
+  .filter-item {
+    display: block;
+  }
 }
 
 .filter-btn.anchor {
@@ -2027,7 +2048,6 @@ footer {
 @media screen and (min-width: 1200px) {
   .examples-card {
     width: 370px;
-    margin-bottom: 30px;
   }
 }
 

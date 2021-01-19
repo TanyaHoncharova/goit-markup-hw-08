@@ -40,11 +40,17 @@
    }     
 
     &-item {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
         margin-right: 8px;
         border-radius: 4px;
         color: $title-text-color;
         background-color: $section-color;
+         
+         @media screen and (max-width: width 768px) {
+             display: block;
+         }
     }
     
    
@@ -80,17 +86,16 @@
     margin-right: 8px;
 }
 
-// .cards {
-//     display: flex;
-// }
+.cards {
+ 
+}
 .examples {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     padding:0px -15px;
 
-    // padding-top: 34px;
-    // padding-bottom: 94px;
+ 
     
     @media screen and (min-width:768px) {
         
@@ -106,14 +111,7 @@
 }
 
 
-// .examples .examples-card:not(:nth-child(3n)) {
-//     margin-right: 30px;
 
-// }
-
-// .examples .examples-card:nth-child(n + 3) {
-//     margin-bottom: 30px;
-// }
 
 .examples-card {
     display: block;
@@ -128,7 +126,7 @@
         }
         @media screen and (min-width:1200px) {
             width: 370px;
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
             }
 
     &:hover,
