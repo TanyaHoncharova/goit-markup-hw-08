@@ -1,12 +1,24 @@
 .portfolio {
     display: flex;
     justify-content: center;
-    
-    width: 100%;
+    width: 320px;
+    // width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
     margin: 0 auto;
     flex-wrap: wrap;
+
+     @media screen and (min-width: 480px) {
+         width: 480px;
+         padding-top: 60px;
+         padding-bottom: 60px;
+
+     }
+  @media screen and (min-width: 768px) {
+          width: 768px;
+
+          }
+
 
     @media screen and (min-width:1200px){
         width: 1200px;
@@ -48,7 +60,7 @@
         color: $title-text-color;
         background-color: $section-color;
          
-         @media screen and (max-width: width 768px) {
+         @media screen and (max-width: width 767px) {
              display: block;
          }
     }
@@ -86,24 +98,23 @@
     margin-right: 8px;
 }
 
-.cards {
- 
-}
+
 .examples {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding:0px -15px;
+    padding: 0px -15px;
 
  
     
     @media screen and (min-width:768px) {
-        
+        width: 100%;
+        padding: 0px -15px;
     }
     @media screen and (min-width:1200px) {
     width: 1200px;
-    padding-top: 34px;
-    padding-bottom: 94px;
+    padding: 34px -15px 94px;
+    
     margin-right: auto;
     margin-left: auto;
 
@@ -116,15 +127,24 @@
 .examples-card {
     display: block;
     position: relative;
-    width: 450px;
-
     margin: 15px;
     border: 1px solid $section-color;
 
-        @media screen and (min-width:768px) {
+    @media screen and (max-width: 479px) {
+        width: 100%;
+
+        }
+
+    @media screen and (min-width: 480px) {
+     width: calc((100%-60px)/2);
+
+    }
+
+   @media screen and (min-width:768px) {
             width: 354px;
         }
-        @media screen and (min-width:1200px) {
+
+   @media screen and (min-width:1200px) {
             width: 370px;
             // margin-bottom: 30px;
             }
