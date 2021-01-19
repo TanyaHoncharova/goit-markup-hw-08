@@ -8,21 +8,37 @@
 
     background-color: $black-color;
     color: $white-color;
+    background-image: url(../images/mobile/heroimg.jpg);
+    @media (min-resolution: 2dppx) {
+        background-image: url(../images/mobile/heroimg@2x.jpg);
+    }   
+
+
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero.jpg);
-    background-repeat: no-repeat;
+            rgba(47, 48, 58, 0.4));
+   
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 
 
 @media screen and (min-width: 480px) {
     width: 480px;
+    background-image: url(../images/tablet/heroimg.jpg);
+    @media (min-resolution: 2dppx) {
+       background-image: url(../images/tablet/heroimg@2x.jpg);
+    } 
+    
 }
 
 @media screen and (min-width: 768px) {
     width: 768px;
+      background-image: url(../images/desctop/heroimg.jpg);
+
+      @media (min-resolution: 2dppx) {
+          background-image: url(../images/desctop/heroimg@2x.jpg);
+      }
 }
 
 @media screen and (min-width: 1200px) {    
