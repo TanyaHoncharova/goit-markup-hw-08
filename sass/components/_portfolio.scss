@@ -2,20 +2,42 @@
     display: flex;
     justify-content: center;
     
-    width: 1200px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin: 0 auto;
     flex-wrap: wrap;
+
+    @media screen and (min-width:1200px){
+        width: 1200px;
+        padding-top: 94px;
+        padding-bottom: 94px;
+        
+    }
 }
 
 .filter {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 34px;
-
     color: $title-text-color;
     @extend %filter-txt;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+    
+    @media screen and (max-width: width 767px) {
+        flex-wrap: nowrap;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: width 768px) {
+        flex-wrap: nowrap;
+        margin-bottom: 30px;
+    }
+
+   @media screen and (min-width: width 1200px) {
+        margin-bottom: 34px;
+   }     
 
     &-item {
         display: block;
@@ -24,6 +46,8 @@
         color: $title-text-color;
         background-color: $section-color;
     }
+    
+   
 }
 
 
@@ -56,33 +80,56 @@
     margin-right: 8px;
 }
 
+// .cards {
+//     display: flex;
+// }
 .examples {
     display: flex;
     flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    padding:0px -15px;
+
+    // padding-top: 34px;
+    // padding-bottom: 94px;
+    
+    @media screen and (min-width:768px) {
+        
+    }
+    @media screen and (min-width:1200px) {
     width: 1200px;
     padding-top: 34px;
     padding-bottom: 94px;
+    margin-right: auto;
+    margin-left: auto;
+
+    }
 }
 
 
-.examples .examples-card:not(:nth-child(3n)) {
-    margin-right: 30px;
+// .examples .examples-card:not(:nth-child(3n)) {
+//     margin-right: 30px;
 
-}
+// }
 
-.examples .examples-card:nth-child(n + 3) {
-    margin-bottom: 30px;
-}
+// .examples .examples-card:nth-child(n + 3) {
+//     margin-bottom: 30px;
+// }
 
 .examples-card {
     display: block;
     position: relative;
-    width: 370px;
+    width: 450px;
 
-    margin-bottom: 30px;
+    margin: 15px;
     border: 1px solid $section-color;
+
+        @media screen and (min-width:768px) {
+            width: 354px;
+        }
+        @media screen and (min-width:1200px) {
+            width: 370px;
+            margin-bottom: 30px;
+            }
 
     &:hover,
    &:focus {
@@ -95,11 +142,18 @@
 
 
 
-
 .examples-photo {
 
     position: relative;
     overflow: hidden;
+
+}
+
+.examples-img {
+    display: block;
+    width: 100%;
+    height: auto;
+
 }
 
 
