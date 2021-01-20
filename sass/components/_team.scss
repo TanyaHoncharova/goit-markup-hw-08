@@ -4,6 +4,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+
+
     @media screen and (min-width: 1200px) {
             padding-top: 94px;
             padding-bottom: 0px;
@@ -25,7 +27,11 @@
 
 }
 
+
+
 .team-list {
+ margin: 0 auto;
+
     @media screen and (min-width: 768px){
     display: flex;
     flex-wrap: wrap;

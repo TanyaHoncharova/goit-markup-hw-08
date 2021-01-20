@@ -105,7 +105,10 @@
     width: 100%;
     padding: 0px -15px;
 
- 
+    @media screen and (max-width:767px) {
+
+        justify-content: center;
+    }
     
     @media screen and (min-width:768px) {
         width: 100%;
@@ -129,24 +132,21 @@
     position: relative;
     margin: 15px;
     border: 1px solid $section-color;
+    width: 100%;
 
-    @media screen and (max-width: 479px) {
-        width: 100%;
-
-        }
 
     @media screen and (min-width: 480px) {
-     width: calc((100%-60px)/2);
-
+        width: 450px;
+        
     }
-
-   @media screen and (min-width:768px) {
-            width: 354px;
+    
+    @media screen and (min-width:768px) {
+       width: 354px;
         }
 
    @media screen and (min-width:1200px) {
             width: 370px;
-            // margin-bottom: 30px;
+
             }
 
     &:hover,
@@ -210,8 +210,8 @@
     padding: 63px 24px;
     background-color: $accent-color;
     color: $white-color;
-    font-size: 18px;
-    line-height: 1.56;
+    font-size: 14px;
+    line-height: 1.55;
     letter-spacing: 0.03em;
 
     transform: translateY(100%);
@@ -220,6 +220,11 @@
     .examples-card:hover & {
     opacity: 1;
     transform: translateY(0);
+
+    @media screen and (min-width:768px) {
+        font-size: 18px;
+        
+    }
 
 }
 }

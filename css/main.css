@@ -447,6 +447,7 @@ body {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin: 0 auto;
   }
 }
 
@@ -1201,6 +1202,9 @@ img {
 
 /* Оссобености */
 .advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -1393,6 +1397,10 @@ img {
   .team h2 {
     font-size: 28px;
   }
+}
+
+.team-list {
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -2035,6 +2043,14 @@ footer {
   padding: 0px -15px;
 }
 
+@media screen and (max-width: 767px) {
+  .examples {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .examples {
     width: 100%;
@@ -2056,17 +2072,12 @@ footer {
   position: relative;
   margin: 15px;
   border: 1px solid #F5F4FA;
-}
-
-@media screen and (max-width: 479px) {
-  .examples-card {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
   .examples-card {
-    width: calc((100%-60px)/2);
+    width: 450px;
   }
 }
 
@@ -2135,8 +2146,8 @@ footer {
   padding: 63px 24px;
   background-color: #2196F3;
   color: #ffffff;
-  font-size: 18px;
-  line-height: 1.56;
+  font-size: 14px;
+  line-height: 1.55;
   letter-spacing: 0.03em;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -2150,5 +2161,11 @@ footer {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .examples-card:hover .overlay {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
